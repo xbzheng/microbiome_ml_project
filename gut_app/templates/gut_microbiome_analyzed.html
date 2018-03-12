@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>CRC-Predictor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../static/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head> 
+  
+  <body>
+  <div class="container" width="800px">
+      <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+          <div class="row" id="page-title">
+              <div class="col-md-12">
+                  <h1>Microbiome Profiling</h1>
+              </div>
+          </div>
+          
+          <div class="row" id="page-heading">
+              <div class="col-md-6">
+                  <h4>Risk Predictor for Colorectal Cancer.</h4>
+                  <div class="col-md-3">
+                  <img src= "https://raw.githubusercontent.com/xbzheng/microbiome_ml_project/master/images/ivan_headshot.jpg" alt="Ivan Zheng" style="clip-path: circle(75px at center); width: 150px; height: 150px; margin-left: auto; margin-right: auto; display: block;">
+                  </div>
+
+                  <img src="https://raw.githubusercontent.com/xbzheng/microbiome_ml_project/master/images/julie_headshot.jpg" alt="Julie Huang" style="clip-path: circle(75px at center); width: 150px; height: 150px; margin-left: auto; margin-right: auto; display: block;">
+                  <h4>Authors </h4>
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/xbzheng/">Xiaobin (Ivan) Zheng</a>, PhD. Data Engineering Lead and Data Scientist at Insight Data Science</li>
+                    <li><a href="https://www.linkedin.com/in/zhongyunhuang/">Zhongyun (Julie) Huang</a>, PhD. Insight Health Data Science Fellow (Winter 2017), and currently works as a Principal Scientist at Roche Sequencing Solutions</li>
+                  </ul>
+
+              </div>
+              
+              <div class="col-md-6">
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQCprKZLlPZC99me6c_Ay1QyHD6Vk_oBkScRkN9Ahr-V1zD37L58T-j4eu98gOCwkv-n_UPeyfUD_5o/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+          </div>
+
+      <br><br>
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>TrustYourGut: Colorectal Cancer Risk Report</h1>
+        <p class="lead">The colorectal cancer risk prediction is based on the relative abundance of the microbe species living in a patient's gut</p>
+      </div>
+     </div><!-- /.container -->
+    <div class="container">
+      <div class="starter-template">
+        <h3>The patient's colorectal cancer positivity score is: </h3>
+        <p  class="lead" style = "color: red">{{the_result}}%<br>{{sentence}} <br><br><br><br></font></p>
+      </div>
+     </div><!-- /.container -->
+     
+    <div class="container">
+    
+      <div class="starter-template">
+        <p class="lead">The following picture shows the most important colorectal cancer associated bacteria species, and their abundancy distribution among healthy people.<br> See where your patient is (blue dots) in the distribution</p>
+      </div>
+
+        <div class="container">
+        <align = "enter">
+      <img src="../static/image/{{image_name}}.png">  <!-- This line works local --> 
+        </div>    
+        
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="../static/js/bootstrap.min.js"></script>
+
+     </div><!-- /.container -->
+
+  </div>
+
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="../static/js/bootstrap.min.js"></script>
+      <!-- jQuery -->
+      <script src="../static/js/jquery.min.js"></script>
+      <!-- jQuery Easing -->
+      <script src="../static/js/jquery.easing.1.3.js"></script>
+      <!-- Bootstrap -->
+      <script src="../static/js/bootstrap.min.js"></script>
+      <!-- Waypoints -->
+      <script src="../static/js/jquery.waypoints.min.js"></script>
+      <!-- Main JS -->
+      <script src="../static/js/main.js"></script>
+      <footer id="fh5co-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 col-md-offset-1 text-center">
+                  <p>Insight Health Data Science Project 2017 <br> &copy; Xiaobin (Ivan) Zheng & Zhongyun (Julie) Huang <br>Contact: ivan@insightdatascience.com</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+  </body>
+</html>
+
